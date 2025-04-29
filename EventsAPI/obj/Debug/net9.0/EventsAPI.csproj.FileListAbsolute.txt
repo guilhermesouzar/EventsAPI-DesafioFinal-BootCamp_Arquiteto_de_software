@@ -138,3 +138,4 @@ C:\Users\Guilherme\Documents\POS GRADUAÇÃO\DESAFIO FINAL\EventsApi\obj\Debug\n
 C:\Users\Guilherme\Documents\POS GRADUAÇÃO\DESAFIO FINAL\EventsApi\obj\Debug\net9.0\EventsAPI.pdb
 C:\Users\Guilherme\Documents\POS GRADUAÇÃO\DESAFIO FINAL\EventsApi\obj\Debug\net9.0\EventsAPI.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\POS GRADUAÇÃO\DESAFIO FINAL\EventsApi\obj\Debug\net9.0\ref\EventsAPI.dll
+C:\Users\Guilherme\Documents\POS GRADUAÇÃO\DESAFIO FINAL\EventsApi\obj\Debug\net9.0\EventsAPI.sourcelink.json
