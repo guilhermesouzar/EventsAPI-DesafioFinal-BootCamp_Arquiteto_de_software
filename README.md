@@ -98,18 +98,20 @@ A documentação segue o padrão **C4 Model** com os seguintes níveis:
 ```bash
 git clone https://github.com/guilhermesouzar/EventsAPI-DesafioFinal-BootCamp_Arquiteto_de_software
 cd EventsAPI-DesafioFinal-BootCamp_Arquiteto_de_software
+cd EventsAPI
 ```
 
-Em seu terminal Docker execute o comando para subir uma instancia SQLServer (porta modificada para 1344) utilizando o arquivo do repositório
+Abra o terminal e execute o comando para subir uma instancia SQLServer no Docker (porta modificada para 1344) utilizando o arquivo do repositório
 
 ```
 docker-compose -f docker-compose-sql.yaml up -d
-
 ```
 
 No terminal do VSCode execute:
 
 ```
+dotnet restore
+
 dotnet ef migrations add InitialCreate
 
 dotnet ef database update
