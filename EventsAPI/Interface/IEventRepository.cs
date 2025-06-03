@@ -9,11 +9,13 @@ namespace EventsAPI.Interface
 {
     public interface IEventRepository
     {
-        Task<List<Event>> GetAllEventsAsync();
-        Task<Event> GetEventByIdAsync(int id);
-        Task<Event> CreateEventAsync(Event eventModel);
-        Task<List<Event>> GetEventByClientNameAsync(string name);
-        Task<Event> UpdateEventAsync(Event eventModel);
-        Task<Event?> DeleteEventAsync(int id);
+        Task<List<Evento>> GetAllEventsAsync();
+        Task<Evento> GetEventByIdAsync(int id);
+        Task<Evento> CreateEventAsync(Evento eventModel);
+        Task<List<Evento>> GetEventByClientNameAsync(string name);
+        Task<List<Evento>> GetEventByResponsibleNameAsync(string name);
+        Task<List<Evento>> GetEventByDateAndResponsibleNameAsync(DateTime initDate, DateTime endDate, string name);
+        Task<Evento> UpdateEventAsync(Evento eventModel);
+        Task<Evento?> DeleteEventAsync(int id);
     }
 }

@@ -12,6 +12,6 @@ namespace EventsAPI.Repository
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> dbContextOptions) : base(dbContextOptions)
         {
         }
-        public DbSet<Event> Events { get; set; }
+        // public DbSet<Event> Events { get; set; }
     }
 }

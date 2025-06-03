@@ -4473,11 +4473,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\POS GRADUAÇÃO\\DESAFIO FINAL\\EventsApi\\EventsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\DattaNew\\DattaNew -CTO\\API\\EventsAPI-DesafioFinal-BootCamp_Arquiteto_de_software\\EventsAPI\\EventsAPI.csproj",
       "projectName": "EventsAPI",
-      "projectPath": "C:\\Users\\Guilherme\\Documents\\POS GRADUAÇÃO\\DESAFIO FINAL\\EventsApi\\EventsAPI.csproj",
+      "projectPath": "C:\\Users\\Guilherme\\Documents\\DattaNew\\DattaNew -CTO\\API\\EventsAPI-DesafioFinal-BootCamp_Arquiteto_de_software\\EventsAPI\\EventsAPI.csproj",
       "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Guilherme\\Documents\\POS GRADUAÇÃO\\DESAFIO FINAL\\EventsApi\\obj\\",
+      "outputPath": "C:\\Users\\Guilherme\\Documents\\DattaNew\\DattaNew -CTO\\API\\EventsAPI-DesafioFinal-BootCamp_Arquiteto_de_software\\EventsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

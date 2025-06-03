@@ -8,12 +8,12 @@ namespace EventsAPI.Dtos
     public class CreateEventRequestDto
     {
 
-        public int CompanyId { get; set; }
+        public string COD_EMPRESA { get; set; }  = string.Empty;
 
-        public string EventClientName { get; set; } = string.Empty;
+        public string NOME { get; set; } = string.Empty;
 
-        public string EventResponsible { get; set; } = string.Empty;
+        public string EVENTO_RESPONSAVEL { get; set; } = string.Empty;
 
-        public string EventType { get; set; } = string.Empty;
+        public int? EVENTO_TIPO { get; set; } 
     }
 }

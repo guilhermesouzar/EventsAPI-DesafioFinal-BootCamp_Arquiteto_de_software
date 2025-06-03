@@ -52,6 +52,28 @@ namespace EventsAPI.Controllers
             return Ok(eventItem);
         }
 
+        [HttpGet("FindByResponsible/{name}")]
+        public async Task<IActionResult> FindByResponsibleName([FromRoute] string name)
+        {
+            var eventItem = await _eventService.GetEventByResponsibleNameAsync(name);
+            if (eventItem == null)
+            {
+                return NotFound();
+            }
+            return Ok(eventItem);
+
+        }
+        [HttpGet("FindByDateAndResponsible/{initDate}/{endDate}/{name}")]
+        public async Task<IActionResult> FindByDateAndResponsibleName([FromRoute] DateTime initDate, [FromRoute] DateTime endDate, [FromRoute] string name)
+        {
+            var eventItem = await _eventService.GetEventByDateAndResponsibleNameAsync(initDate, endDate, name);
+            if (eventItem == null)
+            {
+                return NotFound();
+            }
+            return Ok(eventItem);
+        }
+
         [HttpGet("Count")]
         public async Task<IActionResult> CountAllEvents()
         {
@@ -72,7 +94,7 @@ namespace EventsAPI.Controllers
                 return BadRequest("Evento não pode ser nulo");
             }
             await _eventService.CreateEventAsync(eventModel);
-            return CreatedAtAction(nameof(FindById), new { id = eventModel.Id }, eventModel.ToEventDto());
+            return CreatedAtAction(nameof(FindById), new { id = eventModel.EventosId }, eventModel.ToEventDto());
         }
 
         [HttpPut]

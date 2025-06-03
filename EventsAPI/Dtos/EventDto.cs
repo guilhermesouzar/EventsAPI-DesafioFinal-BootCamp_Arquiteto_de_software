@@ -7,14 +7,14 @@ namespace EventsAPI.Dtos
 {
     public class EventDto
     {
-        public int Id { get; set; }
+        public int EventosId { get; set; }
 
-        public int CompanyId { get; set; }
+        public string COD_EMPRESA { get; set; } = string.Empty;
 
-        public string EventClientName { get; set; } = string.Empty;
+        public string NOME { get; set; } = string.Empty;
 
-        public string EventResponsible { get; set; } = string.Empty;
+        public string EVENTO_RESPONSAVEL { get; set; } = string.Empty;
 
-        public string EventType { get; set; } = string.Empty;
+        public int? EVENTO_TIPO { get; set; } 
     }
 }

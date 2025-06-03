@@ -9,27 +9,33 @@ namespace EventsAPI.Mappers
 {
     public static class EventMappers
     {
-        public static EventDto ToEventDto(this Event eventModel)
+        public static EventDto ToEventDto(this Evento eventModel)
         {
             return new EventDto
             {
-                Id = eventModel.Id,
-                CompanyId = eventModel.CompanyId,
-                EventClientName = eventModel.EventClientName,
-                EventResponsible = eventModel.EventResponsible,
-                EventType = eventModel.EventType
+                EventosId = eventModel.EventosId,
+                COD_EMPRESA = eventModel.COD_EMPRESA,
+                NOME = eventModel.NOME,
+                EVENTO_RESPONSAVEL = eventModel.EVENTO_RESPONSAVEL,
+                EVENTO_TIPO = eventModel.EVENTO_TIPO
             };
         }
 
-        public static Event ToEventFromCreateDTO(this CreateEventRequestDto eventDto)
+        public static Evento ToEventFromCreateDTO(this CreateEventRequestDto eventDto)
         {
-            return new Event
+            return new Evento
             {
-                CompanyId = eventDto.CompanyId,
-                EventClientName = eventDto.EventClientName,
-                EventResponsible = eventDto.EventResponsible,
-                EventType = eventDto.EventType
+                COD_EMPRESA = eventDto.COD_EMPRESA,
+                NOME = eventDto.NOME,
+                EVENTO_RESPONSAVEL = eventDto.EVENTO_RESPONSAVEL,
+                EVENTO_TIPO = eventDto.EVENTO_TIPO
             };
+            // {
+            //     CompanyId = eventDto.CompanyId,
+            //     EventClientName = eventDto.EventClientName,
+            //     EventResponsible = eventDto.EventResponsible,
+            //     EventType = eventDto.EventType
+            // };
         }
         // public static Event ToEventFromUpdateDTO(this UpdateEventRequestDto updateEventRequestDto)
         // {
